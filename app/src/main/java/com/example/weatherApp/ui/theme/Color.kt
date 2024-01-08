@@ -1,4 +1,4 @@
-package com.example.todoappwithcleanarchitecture.ui.theme
+package com.example.weatherApp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

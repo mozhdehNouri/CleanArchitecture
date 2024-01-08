@@ -1,4 +1,4 @@
-package com.example.todoappwithcleanarchitecture.ui.theme
+package com.example.weatherApp.ui.theme
 
 import android.app.Activity
 import android.os.Build

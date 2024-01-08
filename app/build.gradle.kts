@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.todoappwithcleanarchitecture"
+    namespace = "com.example.weatherAppWithCleanArch"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.example.todoappwithcleanarchitecture"
+        applicationId = "com.example.weatherAppWithCleanArch"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
@@ -56,8 +56,6 @@ dependencies {
 
     val composeBom = platform(libs.androidx.compose.bom)
     implementation(composeBom)
-    androidTestImplementation(composeBom)
-
     implementation(libs.kotlin.stdlib)
     implementation(libs.kotlinx.coroutines.android)
 
@@ -66,9 +64,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
 
     implementation(libs.androidx.lifecycle.viewModelCompose)
-
     implementation(libs.androidx.activity.compose)
-
     implementation(libs.google.android.material)
 
     implementation(libs.androidx.compose.foundation.layout)
@@ -77,8 +73,16 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.runtime)
     debugImplementation(libs.androidx.compose.ui.tooling)
-
     implementation(libs.accompanist.permissions)
-
     implementation(libs.coil.kt.compose)
+    implementation(libs.hilt.android)
+
+    implementation(libs.androidx.lifecycle.viewModelCompose)
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp.logging)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    implementation("com.google.android.gms:play-services-location:16.0.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
 }
